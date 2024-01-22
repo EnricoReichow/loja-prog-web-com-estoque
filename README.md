@@ -1,5 +1,5 @@
 # loja-prog-web-com-estoque
-Repositório com mesma base do "loja-prog-web", porém a funcionalidade de controle de estoque.
+Repositório com mesma base do "loja-prog-web", porém a foi adicionada a feature de controle de estoque.
 <br>
 Foram modificados os arquivos:<br>
 js/deleteProducts.js<br>
