@@ -1,0 +1,374 @@
+/*        HTML        */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+
+    background-color: #c1c1c1;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+nav {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #01641d;
+    height: 10vh;
+    z-index: 1000;
+    box-shadow: 0px 0px 20px #00b330;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+/*        CLASS       */
+
+.logo-img {
+    height: 8rem;
+    width: 10rem;  
+}
+
+.cart-img {
+    height: 8rem;
+    width: 10rem;
+}
+
+.logo-bp {
+    height: 8rem;
+    width: 10rem;
+}
+
+.menu {
+    position: fixed;
+    top: 0vh;
+    right: -100%;
+    width: 15vw;
+    height: 25vh;
+    background-color: #008225;  
+    z-index: 1001;
+    transition: right 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 15vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu li {
+    display: flex;
+    width: 15vw; 
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.1s ease;
+}
+
+.menu li:hover {
+    background-color: #3a8e60;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.layout_itens {
+    justify-content: left;
+    color: black;
+    background-color: white;
+    display: flex;
+    margin-top: 18rem;
+    margin-left: 6%;
+    margin-right: 20%;
+    align-items: center;
+    z-index: 2;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.imagem {
+    width: 35%;
+    height: 25%;
+}
+
+.botao {
+    padding: 0 0.4rem;
+    background-color: #008225;
+    margin: 2%;
+    border: none;
+    border-radius: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    width: 10vw;
+    min-width: 9rem;
+    height: 4vh;
+    font-size: 130%;
+    color: white;
+    
+}
+
+.cart_description{
+    margin-left: 4%;
+    margin-right: 40%;
+
+}
+
+.white_bar{
+    color: black;
+    background-color: white;
+    display: flex;
+    margin-left: 6%;
+    margin-right: 40%;
+    z-index: 2;
+    justify-content: center;
+}
+
+.position_div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.texto {
+    margin-left: 4%;
+    font-size: 2rem;
+}
+
+/*         ID         */
+
+#container_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+    align-items: center;
+}
+
+#left_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+}
+
+#search_product {
+    height: 3.5rem;
+    width: 20rem;
+    border-radius: 2rem;
+    text-indent: 1rem;
+    border: 0.2rem solid #0184b4;
+}
+
+#search_product:focus {
+    outline: none;
+}
+
+#menu_button_style {
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    background-color: #008225;
+    height: 5rem;
+    width: 12rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+#menu_button_style:hover {
+    background-color: #3a8e60;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+#fechar_menu {
+    background-color: #008225;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 15vw;
+    height: 5vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    transition: background-color 0.1s ease;
+}
+
+#fechar_menu:hover {
+    background-color: #3a8e60;
+}
+
+
+.layout_itens {
+    justify-content: left;
+    color: black;
+    background-color: white;
+    display: flex;
+    margin-top: 18rem;
+    margin-left: 6%;
+    margin-right: 40%;
+    z-index: 2;
+    padding: 2rem;
+    gap: 30px;
+}
+
+.layout_itens img {
+
+    width: 50%;
+    height: 50%;
+
+}
+
+.imagem {
+    width: 35%;
+    height: 25%;
+}
+
+.botao {
+    padding: 0 0.4rem;
+    background-color: #008225;
+    margin: 2%;
+    border: none;
+    border-radius: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    width: 10vw;
+    min-width: 9rem;
+    height: 4vh;
+    font-size: 130%;
+    color: white;
+    
+}
+
+.cart_description{
+    margin-left: 6%;
+    margin-right: 40%;
+    margin-top: 2%;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    padding: 1rem;
+
+}
+
+.position_div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.texto {
+    margin-left: 4%;
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.cart-item h3, h4 {
+    font-size: 1.6rem;
+}
+
+.cart-item button {
+    border-radius: 1.5rem;
+    border: 0.1rem solid #008225 ;
+    color: #008225;
+    background: white;
+    padding: 0.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.cart-item button:hover {
+    color: white;
+    background: #008225;
+}
+
+.cart-name {
+    height: 50%;
+}
+
+#img-product {
+    width: 15rem;
+    height: 15rem;
+}
+
+@media all and (max-width: 550px) { 
+    .menu {
+        position: fixed;
+        top: 0vh;
+        right: -100%;
+        width: 100vw;
+        height: 100vh;
+        background-color: #008225;  
+        z-index: 1001;
+        transition: right 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .logo-img {
+        width: 8rem; 
+        height: 6rem; 
+    }
+    
+    .cart-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2frem;
+    }
+
+}
+
+button {
+    cursor: pointer;
+}

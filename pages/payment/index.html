@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="../../img/logo-break-point-icon-wallpaper.png">
+    <title>Finalizar Compra | Break Point VS</title>
+    <script defer src="../../js/paymentProducts.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="container_nav">
+                <div id="left_nav">
+                    <img id="logo-bp" src="../../img/logo-break-point-icon.png" alt="logomarca-do-site" style="height: 80px;
+                    width: 110px;">
+                    <img class="simbols-img" src="../../img/box.png" alt="carrinho-compra">
+                    <img class="simbols-img" src="../../img/money.png" alt="carrinho-compra">
+                </div>
+                <div id="right_nav">
+                    <button id="menu_button_style">MENU</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="payment-title">
+            <h2>Finalizar Compra</h2>
+        </div>
+        <div class="products-list">
+            <h3>Lista produtos</h3>
+        </div>
+        <div class="itens-list">
+
+        </div>
+        <div class="payment-method">
+            <label for="opcoes-pagamento">Selecione a forma de pagamento:</label>
+            <select id="opcoes-pagamento" name="opcao-pagamento">
+                <option value="Nenhum" selected>Nenhum</option>
+                <option value="Credito">Crédito</option>
+                <option value="Debito">Débito</option>
+                <option value="Pix">Pix</option>
+            </select>
+            <br>
+            <br>
+            <div id="payment-details"></div>
+            <br>
+            <br>
+            <h3 id="total-price">aa</h3>
+            <br>
+            <br>
+            <button id="pagar-button" disabled>Pagar</button>
+        </div>
+    </main>
+    <div id="menu" class="menu">
+        <ul>
+            <a href="../../index.html">
+                <li> Sair </li>
+            </a>
+            <a href="../products/index.html">
+                <li> Produtos </li>
+            </a>
+            <a href="../cart/index.html">
+                <li> Carrinho </li>
+            </a>
+            <button id="fechar_menu"> ✖ </button>
+        </ul>
+    </div>
+    <script defer src="../../js/menu.js"></script>
+</body>
+
+</html>
